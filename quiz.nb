@@ -10,37 +10,118 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     18522,        458]
-NotebookOptionsPosition[     13522,        351]
-NotebookOutlinePosition[     17441,        449]
-CellTagsIndexPosition[     17398,        446]
+NotebookDataLength[     22022,        534]
+NotebookOptionsPosition[     16951,        425]
+NotebookOutlinePosition[     20903,        523]
+CellTagsIndexPosition[     20860,        520]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[
- FrameBox[
-  RowBox[{"QuestionObject", "[", 
-   RowBox[{
-   "\"\<What is the 25th letter of the standard English alphabet?\>\"", ",", 
-    RowBox[{"AssessmentFunction", "[", 
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"\"\<X\>\"", "\[Rule]", "False"}], ",", 
-       RowBox[{"\"\<Y\>\"", "\[Rule]", "True"}], ",", 
-       RowBox[{"\"\<Z\>\"", "\[Rule]", "False"}]}], "}"}], "]"}]}], "]"}],
-  Alignment->{Left, Top},
-  BaselinePosition->Baseline,
-  FrameStyle->RGBColor[
-   0.7490196078431373, 0.7490196078431373, 0.7490196078431373],
-  ImageSize->{
-    Scaled[1], {80, 800}},
-  RoundingRadius->5,
-  StripOnInput->False]], "FormElementCode",
- TaggingRules->{
-  "FormNotebook" -> {
-    "Type" -> "Default", "Mode" -> "CODE", "FormExpr" -> 
-     RowBox[{"QuestionObject", "[", 
+ InterpretationBox[
+  DynamicModuleBox[{QuestionFramework`Private`input$$ = "Y", 
+   QuestionFramework`Private`result$$ = "", 
+   QuestionFramework`Private`buttonenabled$$ = True, 
+   QuestionFramework`Private`submissionCount$$ = 0, 
+   QuestionFramework`Private`submittedvalue$$ = "", 
+   QuestionFramework`Private`ch$$ = {"X", "Y", "Z"}}, 
+   DynamicBox[ToBoxes[
+     Framed[
+      Grid[{{
+        "What is the 25th letter of the standard English alphabet?", 
+         SpanFromLeft}, {
+         RadioButtonBar[
+          Dynamic[QuestionFramework`Private`input$$], 
+          QuestionFramework`Private`ch$$, Appearance -> "Vertical"], 
+         QuestionFramework`Private`generalquestionTest[
+         QuestionFramework`Private`result$$, 
+          QuestionFramework`Private`input$$, 
+          QuestionFramework`Private`submittedvalue$$, 
+          AssessmentFunction[{"X" -> False, "Y" -> True, "Z" -> False}]]}, {
+         If[
+          Or[
+          AssessmentFunction[{"X" -> False, "Y" -> True, "Z" -> False}] === 
+           None, CurrentValue[
+             EvaluationNotebook[], {
+             TaggingRules, "FormNotebook", "SubmissionOptions", 
+              "GroupSubmissionFlag"}] === True], "", 
+          QuestionFramework`Private`submitButton[
+          QuestionFramework`Private`result$$ = 
+            AssessmentFunction[{"X" -> False, "Y" -> True, "Z" -> False}][
+             QuestionFramework`Private`input$$, "SubmissionCount" -> 
+              QuestionFramework`Private`submissionCount$$]; 
+           QuestionFramework`Private`submittedvalue$$ = 
+            QuestionFramework`Private`input$$; 
+           QuestionFramework`Private`submissionCount$$ = 
+            QuestionFramework`Private`getSubmissionCount[
+             QuestionFramework`Private`result$$]; 
+           QuestionFramework`Private`buttonenabled$$ = 
+            If[QuestionFramework`Private`submissionCount$$ >= Lookup[
+                QuestionFramework`Private`result$$["AssessmentOptions"], 
+                "MaxSubmissions"], False, True, True]]], 
+         If[
+         Head[QuestionFramework`Private`result$$] === AssessmentResultObject, 
+          Row[{
+            If[Head[
+               QuestionFramework`Private`result$$["Explanation"]] === String, 
+             QuestionFramework`Private`result$$["Explanation"], ""]}, 
+           Spacer[5]], ""], SpanFromLeft}}, Alignment -> Left, 
+       Spacings -> {1, 1}], ImageSize -> If[
+        MatchQ[
+         CurrentValue[
+          EvaluationNotebook[], TaggingRules], 
+         KeyValuePattern["FormNotebook" -> Blank[List]]], {Full, Automatic}, 
+        Automatic], Background -> GrayLevel[1], FrameStyle -> 
+      RGBColor[0.7490196078431373, 0.7490196078431373, 0.7490196078431373], 
+      RoundingRadius -> 5, FrameMargins -> 10, BaseStyle -> "Panel"], 
+     StandardForm],
+    ImageSizeCache->{
+     1015.5999999999999`, {52.933593799266966`, 57.066406200733034`}},
+    TrackedSymbols:>{
+     QuestionFramework`Private`result$$, QuestionFramework`Private`input$$, 
+      QuestionFramework`Private`submittedvalue$$}],
+   DynamicModuleValues:>{}],
+  QuestionObject[
+   QuestionInterface[
+   Automatic, "What is the 25th letter of the standard English alphabet?"], 
+   AssessmentFunction[{"X" -> False, "Y" -> True, "Z" -> False}]]]], \
+"FormElementPreview",
+ Editable->False,
+ TaggingRules->{"FormNotebook" -> {"AuthorViewExpression" -> Cell[
+       BoxData[
+        FrameBox[
+         RowBox[{"QuestionObject", "[", 
+           
+           RowBox[{"\"What is the 25th letter of the standard English \
+alphabet?\"", ",", 
+             RowBox[{"AssessmentFunction", "[", 
+               RowBox[{"{", 
+                 RowBox[{
+                   RowBox[{"\"X\"", "\[Rule]", "False"}], ",", 
+                   RowBox[{"\"Y\"", "\[Rule]", "True"}], ",", 
+                   RowBox[{"\"Z\"", "\[Rule]", "False"}]}], "}"}], "]"}]}], 
+           "]"}], Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+         FrameStyle -> 
+         RGBColor[0.7490196078431373, 0.7490196078431373, 0.7490196078431373],
+          ImageSize -> {
+           Scaled[1], {80, 800}}, RoundingRadius -> 5, StripOnInput -> 
+         False]], "FormElementCode", 
+       TaggingRules -> {
+        "FormNotebook" -> {
+          "Type" -> "Default", "Mode" -> "CODE", "FormExpr" -> 
+           RowBox[{"QuestionObject", "[", 
+              
+              RowBox[{"\"What is the 25th letter of the standard English \
+alphabet?\"", ",", 
+                RowBox[{"AssessmentFunction", "[", 
+                  RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"\"X\"", "\[Rule]", "False"}], ",", 
+                    RowBox[{"\"Y\"", "\[Rule]", "True"}], ",", 
+                    RowBox[{"\"Z\"", "\[Rule]", "False"}]}], "}"}], "]"}]}], 
+              "]"}], "Key" -> Inherited}}], "Type" -> "Default", "Mode" -> 
+     "PREVIEW", "FormExpr" -> RowBox[{"QuestionObject", "[", 
         RowBox[{
          "\"What is the 25th letter of the standard English alphabet?\"", ",", 
           RowBox[{"AssessmentFunction", "[", 
@@ -49,30 +130,7 @@ Cell[BoxData[
                 RowBox[{"\"X\"", "\[Rule]", "False"}], ",", 
                 RowBox[{"\"Y\"", "\[Rule]", "True"}], ",", 
                 RowBox[{"\"Z\"", "\[Rule]", "False"}]}], "}"}], "]"}]}], 
-        "]"}], "Key" -> (
-      "FormNotebook" -> {
-       "SubmissionOptions" -> {
-         "ButtonText" -> "Submit", "ButtonTextColor" -> GrayLevel[1], 
-          "ButtonTextBackground" -> 
-          RGBColor[
-           0.30980392156862746`, 0.6352941176470588, 0.796078431372549], 
-          "DockedCellColor" -> GrayLevel[0.96], "DockedCellText" -> 
-          "Generated Form", "DockedCellTextColor" -> GrayLevel[0.2], 
-          "WholeNotebookSubmission" -> False, "ResourceCellObject" -> None, 
-          "GroupSubmissionFlag" -> False, "AssessmentMethod" -> "Local", 
-          "DeployLocation" -> "MyQuiz", "QuizLocation" -> "MyQuiz"}, 
-        "InsertBar" -> "Open", "ToolsBar" -> "Closed", 
-        "InsertHistory" -> <|
-         "Multiple Choice" -> RowBox[{"QuestionObject", "[", 
-             RowBox[{"\"XXXX\"", ",", 
-               RowBox[{"AssessmentFunction", "[", 
-                 RowBox[{"{", 
-                   RowBox[{
-                    RowBox[{"\"X\"", "\[Rule]", "False"}], ",", 
-                    RowBox[{"\"Y\"", "\[Rule]", "True"}], ",", 
-                    RowBox[{"\"Z\"", "\[Rule]", "False"}]}], "}"}], "]"}]}], 
-             "]"}]|>, "PreventSettingsDialog" -> False, 
-        "InputAssoc" -> <||>})}}],
+        "]"}]}},ExpressionUUID->"bdf91795-0c9a-4507-aef9-0d80ca4b2082"],
 
 Cell[BoxData[
  FrameBox[
@@ -105,7 +163,8 @@ Cell[BoxData[
                 RowBox[{"\"Orange\"", "->", "False"}], ",", 
                 RowBox[{"\"Yellow\"", "->", "False"}], ",", 
                 RowBox[{"\"Green\"", "->", "False"}]}], "}"}], "]"}]}], "]"}],
-      "Key" -> Inherited}}],
+      "Key" -> 
+     Inherited}},ExpressionUUID->"ba644d9d-3418-4d57-af50-01b8c9425b61"],
 
 Cell[BoxData[
  FrameBox[
@@ -137,7 +196,9 @@ Cell[BoxData[
                 RowBox[{"\"Y\"", "\[Rule]", "True"}], ",", 
                 RowBox[{"\"Z\"", "\[Rule]", "False"}]}], "}"}], "]"}]}], 
         "]"}]}},
- CellChangeTimes->{{3.8705446049830627`*^9, 3.870544633442643*^9}}],
+ CellChangeTimes->{{3.8705446049830627`*^9, 
+  3.870544633442643*^9}},ExpressionUUID->"707b444c-c318-4396-9305-\
+4a02715d650e"],
 
 Cell[BoxData[
  FrameBox[
@@ -168,7 +229,9 @@ Cell[BoxData[
                 RowBox[{"\"Y\"", "\[Rule]", "True"}], ",", 
                 RowBox[{"\"Z\"", "\[Rule]", "False"}]}], "}"}], "]"}]}], 
         "]"}]}},
- CellChangeTimes->{{3.870544644193535*^9, 3.8705446672458553`*^9}}],
+ CellChangeTimes->{{3.870544644193535*^9, 
+  3.8705446672458553`*^9}},ExpressionUUID->"9300c5ca-fce7-4bd8-b1b1-\
+be9f967a581d"],
 
 Cell[BoxData[
  FrameBox[
@@ -201,7 +264,9 @@ Cell[BoxData[
                 RowBox[{"\"Episcopalian\"", "\[Rule]", "False"}], ",", 
                 RowBox[{"\"Baptist\"", "\[Rule]", "True"}]}], "}"}], "]"}]}], 
         "]"}], "Key" -> Inherited}},
- CellChangeTimes->{{3.870544836546134*^9, 3.870544843599614*^9}}],
+ CellChangeTimes->{{3.870544836546134*^9, 
+  3.870544843599614*^9}},ExpressionUUID->"1d6c375e-01ee-4c63-b243-\
+33965c354094"],
 
 Cell[BoxData[
  FrameBox[
@@ -237,7 +302,9 @@ Cell[BoxData[
                 RowBox[{"\"Episcopalian\"", "\[Rule]", "True"}], ",", 
                 RowBox[{"\"Baptist\"", "\[Rule]", "False"}]}], "}"}], "]"}]}],
          "]"}], "Key" -> Inherited}},
- CellChangeTimes->{{3.870544849572688*^9, 3.870544853618142*^9}}],
+ CellChangeTimes->{{3.870544849572688*^9, 
+  3.870544853618142*^9}},ExpressionUUID->"d8f0e506-b9a6-41c1-a4ce-\
+ecadbd66b611"],
 
 Cell[BoxData[
  FrameBox[
@@ -271,7 +338,11 @@ Cell[BoxData[
                 RowBox[{"\"Episcopalian\"", "\[Rule]", "False"}], ",", 
                 RowBox[{"\"Baptist\"", "->", "False"}]}], "}"}], "]"}]}], 
         "]"}], "Key" -> Inherited}},
- CellChangeTimes->{{3.8705448583539143`*^9, 3.8705448621120305`*^9}}],
+ CellChangeTimes->{{3.8705448583539143`*^9, 
+  3.8705448621120305`*^9}},ExpressionUUID->"a47aeee9-7ca7-424f-80c3-\
+e57b29641827"],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  FrameBox[
@@ -306,7 +377,9 @@ in tongues?\>\"", ",",
                 RowBox[{"\"Y\"", "\[Rule]", "True"}], ",", 
                 RowBox[{"\"Z\"", "\[Rule]", "False"}]}], "}"}], "]"}]}], 
         "]"}]}},
- CellChangeTimes->{{3.8705448710318155`*^9, 3.8705448846588345`*^9}}],
+ CellChangeTimes->{{3.8705448710318155`*^9, 
+  3.8705448846588345`*^9}},ExpressionUUID->"e4ecdbaa-16c0-46fe-a158-\
+b974f59ce0da"],
 
 Cell[BoxData[
  TemplateBox[{
@@ -348,6 +421,7 @@ during this calculation.\"", 2, 55, 21, 19469232922364185101, "Local"},
   "MessageTemplate"]], "Message", "MSG",
  CellChangeTimes->{3.8705451596205482`*^9},
  CellLabel->"During evaluation of In[55]:="]
+}, Open  ]]
 },
 NotebookEventActions->{{"WindowClose" :> (CurrentValue[
       CellObject[
@@ -409,8 +483,8 @@ NotebookEventActions->{{"WindowClose" :> (CurrentValue[
       "65084a92-617a-4e48-b792-34e486a39ac4", 
        "7342b07e-40dd-4676-9a21-aaffb8d19bcd"], {
       TaggingRules, "FormNotebook", "Activated"}] = False)}},
-WindowSize->{1141.1999999999998`, 585.6},
-WindowMargins->{{0., Automatic}, {Automatic, 0.}},
+WindowSize->{1141.2, 575.4},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 DockedCells->Cell[
   BoxData[
    TagBox[
@@ -420,7 +494,6 @@ DockedCells->Cell[
         "\"Generated Form\"", FontFamily -> "Source Sans Pro", FontWeight -> 
          "SemiBold", FontSize -> 18, FontColor -> GrayLevel[0.2], 
          StripOnInput -> False], Alignment -> Bottom, StripOnInput -> False], 
-       
        ItemBox["\"\"", ItemSize -> Fit, StripOnInput -> False], 
        ItemBox["\"\"", StripOnInput -> False]}}, AutoDelete -> False, 
      GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
@@ -435,7 +508,8 @@ TaggingRules->{
        "AssessmentMethod" -> "Cloud"}, "InputAssoc" -> <||>, "AssessResult" -> 
     ""}},
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
-StyleDefinitions->"Wolfram/QAFormNotebook.nb"
+StyleDefinitions->"Wolfram/QAFormNotebook.nb",
+ExpressionUUID->"805cf9d3-18be-4cb4-80ba-3811d7102e07"
 ]
 (* End of Notebook Content *)
 
@@ -448,20 +522,21 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 2421, 54, 70, "FormElementCode",ExpressionUUID->"89b8858f-5e1f-4a49-a543-2437c4246fb4"],
-Cell[2982, 76, 1245, 31, 70, "FormElementCode",ExpressionUUID->"ba644d9d-3418-4d57-af50-01b8c9425b61"],
-Cell[4230, 109, 1141, 30, 70, "FormElementCode",ExpressionUUID->"707b444c-c318-4396-9305-4a02715d650e"],
-Cell[5374, 141, 1108, 29, 70, "FormElementCode",ExpressionUUID->"9300c5ca-fce7-4bd8-b1b1-be9f967a581d"],
-Cell[6485, 172, 1362, 31, 70, "FormElementCode",ExpressionUUID->"1d6c375e-01ee-4c63-b243-33965c354094"],
-Cell[7850, 205, 1399, 34, 70, "FormElementCode",ExpressionUUID->"d8f0e506-b9a6-41c1-a4ce-ecadbd66b611"],
-Cell[9252, 241, 1357, 32, 70, "FormElementCode",ExpressionUUID->"a47aeee9-7ca7-424f-80c3-e57b29641827"],
-Cell[10612, 275, 1313, 33, 70, "FormElementCode",ExpressionUUID->"e4ecdbaa-16c0-46fe-a158-b974f59ce0da"],
-Cell[11928, 310, 386, 8, 70, "Message",ExpressionUUID->"bd232c5c-89d5-4efb-88d0-1a6853a7a279"],
-Cell[12317, 320, 386, 8, 70, "Message",ExpressionUUID->"9b8c5cd8-e6d5-44de-b409-730a22b2f659"],
-Cell[12706, 330, 386, 8, 70, "Message",ExpressionUUID->"0e3f32a2-1dfc-4779-82cf-5fa712744539"],
-Cell[13095, 340, 423, 9, 70, "Message",ExpressionUUID->"a7be6784-d81b-47a3-ac61-bdeee3ba230e"]
+Cell[558, 20, 5395, 112, 125, InheritFromParent,ExpressionUUID->"bdf91795-0c9a-4507-aef9-0d80ca4b2082"],
+Cell[5956, 134, 1306, 32, 95, "FormElementCode",ExpressionUUID->"ba644d9d-3418-4d57-af50-01b8c9425b61"],
+Cell[7265, 168, 1201, 32, 95, "FormElementCode",ExpressionUUID->"707b444c-c318-4396-9305-4a02715d650e"],
+Cell[8469, 202, 1168, 31, 95, "FormElementCode",ExpressionUUID->"9300c5ca-fce7-4bd8-b1b1-be9f967a581d"],
+Cell[9640, 235, 1422, 33, 95, "FormElementCode",ExpressionUUID->"1d6c375e-01ee-4c63-b243-33965c354094"],
+Cell[11065, 270, 1459, 36, 95, "FormElementCode",ExpressionUUID->"d8f0e506-b9a6-41c1-a4ce-ecadbd66b611"],
+Cell[12527, 308, 1417, 34, 95, "FormElementCode",ExpressionUUID->"a47aeee9-7ca7-424f-80c3-e57b29641827"],
+Cell[CellGroupData[{
+Cell[13969, 346, 1373, 35, 95, "FormElementCode",ExpressionUUID->"e4ecdbaa-16c0-46fe-a158-b974f59ce0da"],
+Cell[15345, 383, 386, 8, 70, "Message",ExpressionUUID->"bd232c5c-89d5-4efb-88d0-1a6853a7a279"],
+Cell[15734, 393, 386, 8, 70, "Message",ExpressionUUID->"9b8c5cd8-e6d5-44de-b409-730a22b2f659"],
+Cell[16123, 403, 386, 8, 70, "Message",ExpressionUUID->"0e3f32a2-1dfc-4779-82cf-5fa712744539"],
+Cell[16512, 413, 423, 9, 70, "Message",ExpressionUUID->"a7be6784-d81b-47a3-ac61-bdeee3ba230e"]
+}, Open  ]]
 }
 ]
 *)
 
-(* End of internal cache information *)

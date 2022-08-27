@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     93199,       1940]
-NotebookOptionsPosition[     48490,       1007]
-NotebookOutlinePosition[     92092,       1931]
-CellTagsIndexPosition[     92049,       1928]
+NotebookDataLength[     86685,       1836]
+NotebookOptionsPosition[     33883,        726]
+NotebookOutlinePosition[     85557,       1825]
+CellTagsIndexPosition[     85514,       1822]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -149,333 +149,51 @@ alphabet?\"", ",",
       "QuestionID"]}},ExpressionUUID->"7666c22d-b7b2-46ea-89df-0351265fd7eb"],
 
 Cell[BoxData[
- InterpretationBox[
-  DynamicModuleBox[{QuestionFramework`Private`input$$ = "Red", 
-   QuestionFramework`Private`result$$ = 
-   AssessmentResultObject[<|
-    "Score" -> 1, "MaxScore" -> 1, "MinScore" -> 0, "AnswerCorrect" -> True, 
-     "GivenAnswer" -> "Red", "Explanation" -> None, "Timestamp" -> 
-     DateObject[{2022, 8, 26, 19, 18, 51.9800107`9.468411214619756}, 
-       "Instant", "Gregorian", -4.], "AssessmentOptions" -> {}, 
-     "AnswerComparisonMethod" -> "String", "SubmissionCount" -> 1|>], 
-   QuestionFramework`Private`buttonenabled$$ = True, 
-   QuestionFramework`Private`submissionCount$$ = 1, 
-   QuestionFramework`Private`submittedvalue$$ = "Red", 
-   QuestionFramework`Private`ch$$ = {"Green", "Orange", "Red", "Yellow"}}, 
-   DynamicBox[ToBoxes[
-     Framed[
-      Grid[{{"What color is a cardinal?", SpanFromLeft}, {
-         RadioButtonBar[
-          Dynamic[QuestionFramework`Private`input$$], 
-          QuestionFramework`Private`ch$$, Appearance -> "Vertical"], 
-         QuestionFramework`Private`generalquestionTest[
-         QuestionFramework`Private`result$$, 
-          QuestionFramework`Private`input$$, 
-          QuestionFramework`Private`submittedvalue$$, 
-          
-          AssessmentFunction[{
-           "Red" -> True, "Orange" -> False, "Yellow" -> False, "Green" -> 
-            False}]]}, {
-         If[
-          Or[
-          AssessmentFunction[{
-             "Red" -> True, "Orange" -> False, "Yellow" -> False, "Green" -> 
-              False}] === None, CurrentValue[
-             EvaluationNotebook[], {
-             TaggingRules, "FormNotebook", "SubmissionOptions", 
-              "GroupSubmissionFlag"}] === True], "", 
-          QuestionFramework`Private`submitButton[
-          QuestionFramework`Private`result$$ = 
-            AssessmentFunction[{
-              "Red" -> True, "Orange" -> False, "Yellow" -> False, "Green" -> 
-               False}][
-             QuestionFramework`Private`input$$, "SubmissionCount" -> 
-              QuestionFramework`Private`submissionCount$$]; 
-           QuestionFramework`Private`submittedvalue$$ = 
-            QuestionFramework`Private`input$$; 
-           QuestionFramework`Private`submissionCount$$ = 
-            QuestionFramework`Private`getSubmissionCount[
-             QuestionFramework`Private`result$$]; 
-           QuestionFramework`Private`buttonenabled$$ = 
-            If[QuestionFramework`Private`submissionCount$$ >= Lookup[
-                QuestionFramework`Private`result$$["AssessmentOptions"], 
-                "MaxSubmissions"], False, True, True]]], 
-         If[
-         Head[QuestionFramework`Private`result$$] === AssessmentResultObject, 
-          Row[{
-            If[Head[
-               QuestionFramework`Private`result$$["Explanation"]] === String, 
-             QuestionFramework`Private`result$$["Explanation"], ""]}, 
-           Spacer[5]], ""], SpanFromLeft}}, Alignment -> Left, 
-       Spacings -> {1, 1}], ImageSize -> If[
-        MatchQ[
-         CurrentValue[
-          EvaluationNotebook[], TaggingRules], 
-         KeyValuePattern["FormNotebook" -> Blank[List]]], {Full, Automatic}, 
-        Automatic], Background -> GrayLevel[1], FrameStyle -> 
-      RGBColor[0.7490196078431373, 0.7490196078431373, 0.7490196078431373], 
-      RoundingRadius -> 5, FrameMargins -> 10, BaseStyle -> "Panel"], 
-     StandardForm],
-    ImageSizeCache->{
-     1026.3999999999999`, {59.433593799266966`, 63.566406200733034`}},
-    TrackedSymbols:>{
-     QuestionFramework`Private`result$$, QuestionFramework`Private`input$$, 
-      QuestionFramework`Private`submittedvalue$$}],
-   DynamicModuleValues:>{}],
-  QuestionObject[
-   QuestionInterface[Automatic, "What color is a cardinal?"], 
-   AssessmentFunction[{
-    "Red" -> True, "Orange" -> False, "Yellow" -> False, "Green" -> False}]]]],\
- "FormElementPreview",
- Editable->False,
- TaggingRules->{"FormNotebook" -> {"AuthorViewExpression" -> Cell[
-       BoxData[
-        FrameBox[
-         RowBox[{"QuestionObject", "[", 
-           RowBox[{"\"What color is a cardinal?\"", ",", 
-             RowBox[{"AssessmentFunction", "[", 
-               RowBox[{"{", 
-                 RowBox[{
-                   RowBox[{"\"Red\"", "->", "True"}], ",", 
-                   RowBox[{"\"Orange\"", "->", "False"}], ",", 
-                   RowBox[{"\"Yellow\"", "->", "False"}], ",", 
-                   RowBox[{"\"Green\"", "->", "False"}]}], "}"}], "]"}]}], 
-           "]"}], Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
-         FrameStyle -> 
-         RGBColor[0.7490196078431373, 0.7490196078431373, 0.7490196078431373],
-          ImageSize -> {
-           Scaled[1], {80, 800}}, RoundingRadius -> 5, StripOnInput -> 
-         False]], "FormElementCode", 
-       TaggingRules -> {
-        "FormNotebook" -> {
-          "Type" -> "Default", "Mode" -> "CODE", "FormExpr" -> 
-           RowBox[{"QuestionObject", "[", 
-              RowBox[{"\"What color is a cardinal?\"", ",", 
-                RowBox[{"AssessmentFunction", "[", 
-                  RowBox[{"{", 
-                    RowBox[{
-                    RowBox[{"\"Red\"", "->", "True"}], ",", 
-                    RowBox[{"\"Orange\"", "->", "False"}], ",", 
-                    RowBox[{"\"Yellow\"", "->", "False"}], ",", 
-                    RowBox[{"\"Green\"", "->", "False"}]}], "}"}], "]"}]}], 
-              "]"}], "Key" -> Inherited}}], "Type" -> "Default", "Mode" -> 
-     "PREVIEW", "FormExpr" -> $Failed, 
-     "QuestionID" -> $Failed[
-      "QuestionID"]}},ExpressionUUID->"fc9acb47-a84a-427a-8d99-2ecba33de690"],
+ FrameBox["$Failed",
+  Alignment->{Left, Top},
+  BaselinePosition->Baseline,
+  FrameStyle->RGBColor[
+   0.7490196078431373, 0.7490196078431373, 0.7490196078431373],
+  ImageSize->{
+    Scaled[1], {80, 800}},
+  RoundingRadius->5,
+  StripOnInput->False]], "FormElementCode",
+ TaggingRules->{
+  "FormNotebook" -> {
+    "Type" -> "Default", "Mode" -> "CODE", "FormExpr" -> $Failed, "Key" -> 
+     Inherited}},ExpressionUUID->"6fe402ba-51ec-4cb8-a029-0e6650ab773e"],
 
 Cell[BoxData[
- InterpretationBox[
-  DynamicModuleBox[{QuestionFramework`Private`input$$ = "Woman/Female", 
-   QuestionFramework`Private`result$$ = 
-   AssessmentResultObject[<|
-    "Score" -> 1, "MaxScore" -> 1, "MinScore" -> 0, "AnswerCorrect" -> True, 
-     "GivenAnswer" -> "Woman/Female", "Explanation" -> None, "Timestamp" -> 
-     DateObject[{2022, 8, 26, 19, 17, 16.5697161`8.971890012945472}, 
-       "Instant", "Gregorian", -4.], "AssessmentOptions" -> {}, 
-     "AnswerComparisonMethod" -> "String", "SubmissionCount" -> 1|>], 
-   QuestionFramework`Private`buttonenabled$$ = True, 
-   QuestionFramework`Private`submissionCount$$ = 1, 
-   QuestionFramework`Private`submittedvalue$$ = "Woman/Female", 
-   QuestionFramework`Private`ch$$ = {"Male/Man", "Woman/Female"}}, 
-   DynamicBox[ToBoxes[
-     Framed[
-      Grid[{{"What gender gives birth to a baby?", SpanFromLeft}, {
-         RadioButtonBar[
-          Dynamic[QuestionFramework`Private`input$$], 
-          QuestionFramework`Private`ch$$, Appearance -> "Vertical"], 
-         QuestionFramework`Private`generalquestionTest[
-         QuestionFramework`Private`result$$, 
-          QuestionFramework`Private`input$$, 
-          QuestionFramework`Private`submittedvalue$$, 
-          
-          AssessmentFunction[{
-           "Male/Man" -> False, "Woman/Female" -> True}]]}, {
-         If[
-          Or[
-          AssessmentFunction[{"Male/Man" -> False, "Woman/Female" -> True}] === 
-           None, CurrentValue[
-             EvaluationNotebook[], {
-             TaggingRules, "FormNotebook", "SubmissionOptions", 
-              "GroupSubmissionFlag"}] === True], "", 
-          QuestionFramework`Private`submitButton[
-          QuestionFramework`Private`result$$ = 
-            AssessmentFunction[{"Male/Man" -> False, "Woman/Female" -> True}][
-             QuestionFramework`Private`input$$, "SubmissionCount" -> 
-              QuestionFramework`Private`submissionCount$$]; 
-           QuestionFramework`Private`submittedvalue$$ = 
-            QuestionFramework`Private`input$$; 
-           QuestionFramework`Private`submissionCount$$ = 
-            QuestionFramework`Private`getSubmissionCount[
-             QuestionFramework`Private`result$$]; 
-           QuestionFramework`Private`buttonenabled$$ = 
-            If[QuestionFramework`Private`submissionCount$$ >= Lookup[
-                QuestionFramework`Private`result$$["AssessmentOptions"], 
-                "MaxSubmissions"], False, True, True]]], 
-         If[
-         Head[QuestionFramework`Private`result$$] === AssessmentResultObject, 
-          Row[{
-            If[Head[
-               QuestionFramework`Private`result$$["Explanation"]] === String, 
-             QuestionFramework`Private`result$$["Explanation"], ""]}, 
-           Spacer[5]], ""], SpanFromLeft}}, Alignment -> Left, 
-       Spacings -> {1, 1}], ImageSize -> If[
-        MatchQ[
-         CurrentValue[
-          EvaluationNotebook[], TaggingRules], 
-         KeyValuePattern["FormNotebook" -> Blank[List]]], {Full, Automatic}, 
-        Automatic], Background -> GrayLevel[1], FrameStyle -> 
-      RGBColor[0.7490196078431373, 0.7490196078431373, 0.7490196078431373], 
-      RoundingRadius -> 5, FrameMargins -> 10, BaseStyle -> "Panel"], 
-     StandardForm],
-    ImageSizeCache->{
-     1026.3999999999999`, {45.933593799266966`, 50.066406200733034`}},
-    TrackedSymbols:>{
-     QuestionFramework`Private`result$$, QuestionFramework`Private`input$$, 
-      QuestionFramework`Private`submittedvalue$$}],
-   DynamicModuleValues:>{}],
-  QuestionObject[
-   QuestionInterface[Automatic, "What gender gives birth to a baby?"], 
-   AssessmentFunction[{"Male/Man" -> False, "Woman/Female" -> True}]]]], \
-"FormElementPreview",
- Editable->False,
- TaggingRules->{"FormNotebook" -> {"AuthorViewExpression" -> Cell[
-       BoxData[
-        FrameBox[
-         RowBox[{"QuestionObject", "[", 
-           RowBox[{"\"What gender gives birth to a baby?\"", ",", 
-             RowBox[{"AssessmentFunction", "[", 
-               RowBox[{"{", 
-                 RowBox[{
-                   RowBox[{"\"Male/Man\"", "\[Rule]", "False"}], ",", 
-                   RowBox[{"\"Woman/Female\"", "\[Rule]", "True"}]}], "}"}], 
-               "]"}]}], "]"}], Alignment -> {Left, Top}, BaselinePosition -> 
-         Baseline, FrameStyle -> 
-         RGBColor[0.7490196078431373, 0.7490196078431373, 0.7490196078431373],
-          ImageSize -> {
-           Scaled[1], {80, 800}}, RoundingRadius -> 5, StripOnInput -> 
-         False]], "FormElementCode", 
-       TaggingRules -> {
-        "FormNotebook" -> {
-          "Type" -> "Default", "Mode" -> "CODE", "FormExpr" -> 
-           RowBox[{"QuestionObject", "[", 
-              RowBox[{"\"XXXX\"", ",", 
-                RowBox[{"AssessmentFunction", "[", 
-                  RowBox[{"{", 
-                    RowBox[{
-                    RowBox[{"\"X\"", "\[Rule]", "False"}], ",", 
-                    RowBox[{"\"Y\"", "\[Rule]", "True"}], ",", 
-                    RowBox[{"\"Z\"", "\[Rule]", "False"}]}], "}"}], "]"}]}], 
-              "]"}]}}, 
-       CellChangeTimes -> {{3.8705446049830627`*^9, 3.870544633442643*^9}}], 
-     "Type" -> "Default", "Mode" -> "PREVIEW", "FormExpr" -> $Failed, 
-     "QuestionID" -> $Failed[
-      "QuestionID"]}},ExpressionUUID->"7a691408-e35c-4ce9-8097-aa1ac1f97f21"],
+ FrameBox["$Failed",
+  Alignment->{Left, Top},
+  BaselinePosition->Baseline,
+  FrameStyle->RGBColor[
+   0.7490196078431373, 0.7490196078431373, 0.7490196078431373],
+  ImageSize->{
+    Scaled[1], {80, 800}},
+  RoundingRadius->5,
+  StripOnInput->False]], "FormElementCode",
+ TaggingRules->{
+  "FormNotebook" -> {
+    "Type" -> "Default", "Mode" -> "CODE", "FormExpr" -> $Failed, "Key" -> 
+     Inherited}},ExpressionUUID->"83c7ab3e-e9d9-42db-821f-72156ae8874d"],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
- InterpretationBox[
-  DynamicModuleBox[{QuestionFramework`Private`input$$ = "Man", 
-   QuestionFramework`Private`result$$ = 
-   AssessmentResultObject[<|
-    "Score" -> 1, "MaxScore" -> 1, "MinScore" -> 0, "AnswerCorrect" -> True, 
-     "GivenAnswer" -> "Man", "Explanation" -> None, "Timestamp" -> 
-     DateObject[{2022, 8, 26, 19, 17, 51.3046771`9.462731808659603}, 
-       "Instant", "Gregorian", -4.], "AssessmentOptions" -> {}, 
-     "AnswerComparisonMethod" -> "String", "SubmissionCount" -> 1|>], 
-   QuestionFramework`Private`buttonenabled$$ = True, 
-   QuestionFramework`Private`submissionCount$$ = 1, 
-   QuestionFramework`Private`submittedvalue$$ = "Man", 
-   QuestionFramework`Private`ch$$ = {"Man", "Woman"}}, 
-   DynamicBox[ToBoxes[
-     Framed[
-      Grid[{{"What gender fights in wars?", SpanFromLeft}, {
-         RadioButtonBar[
-          Dynamic[QuestionFramework`Private`input$$], 
-          QuestionFramework`Private`ch$$, Appearance -> "Vertical"], 
-         QuestionFramework`Private`generalquestionTest[
-         QuestionFramework`Private`result$$, 
-          QuestionFramework`Private`input$$, 
-          QuestionFramework`Private`submittedvalue$$, 
-          AssessmentFunction[{"Man" -> True, "Woman" -> False}]]}, {
-         If[
-          Or[
-          AssessmentFunction[{"Man" -> True, "Woman" -> False}] === None, 
-           CurrentValue[
-             EvaluationNotebook[], {
-             TaggingRules, "FormNotebook", "SubmissionOptions", 
-              "GroupSubmissionFlag"}] === True], "", 
-          QuestionFramework`Private`submitButton[
-          QuestionFramework`Private`result$$ = 
-            AssessmentFunction[{"Man" -> True, "Woman" -> False}][
-             QuestionFramework`Private`input$$, "SubmissionCount" -> 
-              QuestionFramework`Private`submissionCount$$]; 
-           QuestionFramework`Private`submittedvalue$$ = 
-            QuestionFramework`Private`input$$; 
-           QuestionFramework`Private`submissionCount$$ = 
-            QuestionFramework`Private`getSubmissionCount[
-             QuestionFramework`Private`result$$]; 
-           QuestionFramework`Private`buttonenabled$$ = 
-            If[QuestionFramework`Private`submissionCount$$ >= Lookup[
-                QuestionFramework`Private`result$$["AssessmentOptions"], 
-                "MaxSubmissions"], False, True, True]]], 
-         If[
-         Head[QuestionFramework`Private`result$$] === AssessmentResultObject, 
-          Row[{
-            If[Head[
-               QuestionFramework`Private`result$$["Explanation"]] === String, 
-             QuestionFramework`Private`result$$["Explanation"], ""]}, 
-           Spacer[5]], ""], SpanFromLeft}}, Alignment -> Left, 
-       Spacings -> {1, 1}], ImageSize -> If[
-        MatchQ[
-         CurrentValue[
-          EvaluationNotebook[], TaggingRules], 
-         KeyValuePattern["FormNotebook" -> Blank[List]]], {Full, Automatic}, 
-        Automatic], Background -> GrayLevel[1], FrameStyle -> 
-      RGBColor[0.7490196078431373, 0.7490196078431373, 0.7490196078431373], 
-      RoundingRadius -> 5, FrameMargins -> 10, BaseStyle -> "Panel"], 
-     StandardForm],
-    ImageSizeCache->{
-     1026.3999999999999`, {45.933593799266966`, 50.066406200733034`}},
-    TrackedSymbols:>{
-     QuestionFramework`Private`result$$, QuestionFramework`Private`input$$, 
-      QuestionFramework`Private`submittedvalue$$}],
-   DynamicModuleValues:>{}],
-  QuestionObject[
-   QuestionInterface[Automatic, "What gender fights in wars?"], 
-   AssessmentFunction[{"Man" -> True, "Woman" -> False}]]]], \
-"FormElementPreview",
- Editable->False,
- TaggingRules->{"FormNotebook" -> {"AuthorViewExpression" -> Cell[
-       BoxData[
-        FrameBox[
-         RowBox[{"QuestionObject", "[", 
-           RowBox[{"\"What gender fights in wars?\"", ",", 
-             RowBox[{"AssessmentFunction", "[", 
-               RowBox[{"{", 
-                 RowBox[{
-                   RowBox[{"\"Man\"", "->", "True"}], ",", 
-                   RowBox[{"\"Woman\"", "->", "False"}]}], "}"}], "]"}]}], 
-           "]"}], Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
-         FrameStyle -> 
-         RGBColor[0.7490196078431373, 0.7490196078431373, 0.7490196078431373],
-          ImageSize -> {
-           Scaled[1], {80, 800}}, RoundingRadius -> 5, StripOnInput -> 
-         False]], "FormElementCode", 
-       TaggingRules -> {
-        "FormNotebook" -> {
-          "Type" -> "Default", "Mode" -> "CODE", "FormExpr" -> 
-           RowBox[{"QuestionObject", "[", 
-              RowBox[{"\"XXXX\"", ",", 
-                RowBox[{"AssessmentFunction", "[", 
-                  RowBox[{"{", 
-                    RowBox[{
-                    RowBox[{"\"X\"", "\[Rule]", "False"}], ",", 
-                    RowBox[{"\"Y\"", "\[Rule]", "True"}], ",", 
-                    RowBox[{"\"Z\"", "\[Rule]", "False"}]}], "}"}], "]"}]}], 
-              "]"}]}}, 
-       CellChangeTimes -> {{3.870544644193535*^9, 3.8705446672458553`*^9}}], 
-     "Type" -> "Default", "Mode" -> "PREVIEW", "FormExpr" -> $Failed, 
-     "QuestionID" -> $Failed[
-      "QuestionID"]}},ExpressionUUID->"80a940ca-4031-446c-abc4-f9ee60e8d449"],
+ FrameBox["$Failed",
+  Alignment->{Left, Top},
+  BaselinePosition->Baseline,
+  FrameStyle->RGBColor[
+   0.7490196078431373, 0.7490196078431373, 0.7490196078431373],
+  ImageSize->{
+    Scaled[1], {80, 800}},
+  RoundingRadius->5,
+  StripOnInput->False]], "FormElementCode",
+ TaggingRules->{
+  "FormNotebook" -> {
+    "Type" -> "Default", "Mode" -> "CODE", "FormExpr" -> $Failed, "Key" -> 
+     Inherited}},ExpressionUUID->"4f86a274-342b-433d-8c47-9f5d231a308e"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -547,7 +265,7 @@ Cell[BoxData[
       RoundingRadius -> 5, FrameMargins -> 10, BaseStyle -> "Panel"], 
      StandardForm],
     ImageSizeCache->{
-     1026.3999999999999`, {59.433593799266966`, 63.566406200733034`}},
+     1019.3999999999999`, {59.433593799266966`, 63.566406200733034`}},
     TrackedSymbols:>{
      QuestionFramework`Private`result$$, QuestionFramework`Private`input$$, 
       QuestionFramework`Private`submittedvalue$$}],
@@ -666,7 +384,7 @@ Cell[BoxData[
       RoundingRadius -> 5, FrameMargins -> 10, BaseStyle -> "Panel"], 
      StandardForm],
     ImageSizeCache->{
-     1026.3999999999999`, {59.433593799266966`, 63.566406200733034`}},
+     1019.3999999999999`, {59.433593799266966`, 63.566406200733034`}},
     TrackedSymbols:>{
      QuestionFramework`Private`result$$, QuestionFramework`Private`input$$, 
       QuestionFramework`Private`submittedvalue$$}],
@@ -787,7 +505,7 @@ Cell[BoxData[
       RoundingRadius -> 5, FrameMargins -> 10, BaseStyle -> "Panel"], 
      StandardForm],
     ImageSizeCache->{
-     1026.3999999999999`, {59.433593799266966`, 63.566406200733034`}},
+     1019.3999999999999`, {59.433593799266966`, 63.566406200733034`}},
     TrackedSymbols:>{
      QuestionFramework`Private`result$$, QuestionFramework`Private`input$$, 
       QuestionFramework`Private`submittedvalue$$}],
@@ -905,7 +623,7 @@ in tongues?", SpanFromLeft}, {
       RoundingRadius -> 5, FrameMargins -> 10, BaseStyle -> "Panel"], 
      StandardForm],
     ImageSizeCache->{
-     1026.3999999999999`, {59.433593799266966`, 63.566406200733034`}},
+     1019.3999999999999`, {59.433593799266966`, 63.566406200733034`}},
     TrackedSymbols:>{
      QuestionFramework`Private`result$$, QuestionFramework`Private`input$$, 
       QuestionFramework`Private`submittedvalue$$}],
@@ -1004,6 +722,7 @@ during this calculation.\"", 2, 55, 21, 19469232922364185101, "Local"},
  CellLabel->
   "During evaluation of \
 In[55]:=",ExpressionUUID->"65084a92-617a-4e48-b792-34e486a39ac4"]
+}, Open  ]]
 },
 WindowSize->{1152., 585.6},
 WindowMargins->{{
@@ -1687,172 +1406,328 @@ quiz"}, "HyperlinkURL"], "]"}]]]}}, Alignment -> Left,
   Cell[
    BoxData[
     StyleBox[
-     TagBox[
-      GridBox[{{
-         ItemBox[
-          TagBox[
-           GridBox[{{
-              OverlayBox[{
-                StyleBox[
-                 TagBox[
-                  DynamicModuleBox[{Typeset`var$$ = False}, 
-                   InterpretationBox[
-                    StyleBox[
-                    PaneSelectorBox[{False -> GridBox[{{
-                    OpenerBox[
-                    Dynamic[Typeset`var$$], Appearance -> Automatic, Enabled -> 
-                    Automatic, AutoAction -> False, ContinuousAction -> 
-                    False], 
-                    StyleBox[
-                    DynamicBox[
-                    ToBoxes[
-                    DateString[
-                    TimeZoneConvert[
-                    DateObject[
-                    3.8705451470939393`17.34034712671145*^9, TimeZone -> 
-                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
-                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
-                    StandardForm], SingleEvaluation -> True, Evaluator -> 
-                    "System"], FontSlant -> Italic, FontColor -> 
-                    GrayLevel[0.5], FontSize -> 0.9 Inherited, StripOnInput -> 
-                    False]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                    AutoDelete -> False, 
-                    GridBoxBackground -> {"Columns" -> {{Automatic}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}, 
-                    BaselinePosition -> {1, 1}], True -> GridBox[{{
-                    OpenerBox[
-                    Dynamic[Typeset`var$$], Appearance -> Automatic, Enabled -> 
-                    Automatic, AutoAction -> False, ContinuousAction -> 
-                    False], 
-                    StyleBox[
-                    DynamicBox[
-                    ToBoxes[
-                    DateString[
-                    TimeZoneConvert[
-                    DateObject[
-                    3.8705451470939393`17.34034712671145*^9, TimeZone -> 
-                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
-                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
-                    StandardForm], SingleEvaluation -> True, Evaluator -> 
-                    "System"], FontSlant -> Italic, FontColor -> 
-                    GrayLevel[0.5], FontSize -> 0.9 Inherited, StripOnInput -> 
-                    False]}, {"", 
-                    PaneBox["\"\"", ImageMargins -> 0]}}, 
-                    GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> 
-                    False, GridBoxBackground -> {"Columns" -> {{Automatic}}}, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}, 
-                    BaselinePosition -> {1, 1}]}, 
-                    Dynamic[Typeset`var$$], Alignment -> Automatic, ImageSize -> 
-                    Automatic, ImageMargins -> 0, BaseStyle -> {}, 
-                    DefaultBaseStyle -> "OpenerView", BaselinePosition -> 
-                    Baseline], Deployed -> False, StripOnInput -> False], 
-                    OpenerView[{
-                    Style[
-                    Dynamic[
-                    DateString[
-                    TimeZoneConvert[
-                    DateObject[
-                    3.8705451470939393`17.34034712671145*^9, TimeZone -> 
-                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
-                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
-                    SingleEvaluation -> True, Evaluator -> "System"], 
-                    FontSlant -> Italic, FontColor -> GrayLevel[0.5], 
-                    FontSize -> 0.9 Inherited], ""}, False]], 
-                   DynamicModuleValues -> Automatic], Setting[#, {0}]& ], 
-                 ShowContents -> False, StripOnInput -> False], 
-                StyleBox[
-                 DynamicBox[
-                  ToBoxes[
-                   DateString[
-                    TimeZoneConvert[
-                    DateObject[
-                    3.8705451470939393`17.34034712671145*^9, TimeZone -> 
-                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
-                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
-                   StandardForm], SingleEvaluation -> True, Evaluator -> 
-                  "System"], FontSlant -> Italic, FontColor -> GrayLevel[0.5],
-                  FontSize -> 0.9 Inherited, StripOnInput -> False]}, 
-               Alignment -> {Right, Baseline}], "\"   \"", 
-              ItemBox[
-               
-               DynamicModuleBox[{
-                DefinitionNotebookClient`Utilities`PackagePrivate`pi$$ = 
-                 Mouseover[
-                   Dynamic[
-                   DefinitionNotebookClient`$StripeProgressDisplay, 
-                    TrackedSymbols :> {
-                    DefinitionNotebookClient`$StripeProgressDisplay}], 
-                   Button["Abort \[RightGuillemet]", FrontEndExecute[
-                    FrontEnd`EvaluatorAbort[Automatic]]; 
-                    DefinitionNotebookClient`$ButtonsDisabled = False; Null, 
-                    Appearance -> None, BaseStyle -> Dynamic[
-                    FEPrivate`If[
-                    CurrentValue["MouseOver"], {"HyperlinkActive"}, {
-                    "Hyperlink"}]], Method -> "Preemptive"], ImageSize -> 
-                   All]}, 
-                DynamicBox[
-                 ToBoxes[
-                 DefinitionNotebookClient`Utilities`PackagePrivate`pi$$, 
-                  StandardForm], 
-                 TrackedSymbols :> {
-                  DefinitionNotebookClient`Utilities`PackagePrivate`pi$$}], 
-                Initialization :> 
-                If[$SessionID =!= 19469232922364185101, 
-                  DefinitionNotebookClient`Utilities`PackagePrivate`pi$$ = 
-                  ""], DynamicModuleValues :> {}], ItemSize -> Scaled[0.75], 
-               StripOnInput -> False]}}, 
-            GridBoxAlignment -> {
-             "Columns" -> {{Left}}, "Rows" -> {{Baseline}}}, AutoDelete -> 
-            False, GridBoxItemSize -> {
-             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Grid"], 
-          ItemSize -> Fit, StripOnInput -> False], 
-         ItemBox["\"\"", ItemSize -> All, StripOnInput -> False], 
-         ItemBox[
-          TagBox[
-           ButtonBox[
-            TagBox[
-             PaneSelectorBox[{False -> GraphicsBox[{
-                  GrayLevel[
-                   NCache[
-                    Rational[64, 85], 0.7529411764705882]], 
-                  
-                  PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
-                   0.42426406871192845`}, {0.42426406871192845`, 
-                   0.282842712474619}}], 
-                  
-                  PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
-                   0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
-                   0.42426406871192845`}}]}, ImageSize -> 18, 
-                 PlotRangePadding -> 0, PlotRange -> 0.7, Background -> None],
-                True -> GraphicsBox[{
-                  GrayLevel[
-                   NCache[
-                    Rational[128, 255], 0.5019607843137255]], 
-                  
-                  PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
-                   0.42426406871192845`}, {0.42426406871192845`, 
-                   0.282842712474619}}], 
-                  
-                  PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
-                   0.282842712474619, -0.42426406871192845`}, \
-{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
-                   0.42426406871192845`}}]}, ImageSize -> 18, 
-                 PlotRangePadding -> 0, PlotRange -> 0.7, Background -> 
-                 None]}, 
+     InterpretationBox[
+      StyleBox[
+       PaneSelectorBox[{False -> GridBox[{{
+             OpenerBox[
               Dynamic[
-               CurrentValue["MouseOver"]], ImageSize -> Automatic, 
-              FrameMargins -> 0], 
-             MouseAppearanceTag["LinkHand"]], ButtonFunction :> 
-            With[{DefinitionNotebookClient`Stripes`PackagePrivate`nbo$ = 
+               CurrentValue[
+                EvaluationCell[], {TaggingRules, "StripeOpen"}, False]], 
+              Appearance -> Automatic, Enabled -> Automatic, AutoAction -> 
+              False, ContinuousAction -> False], 
+             TagBox[
+              GridBox[{{
+                 StyleBox[
+                  DynamicBox[
+                   ToBoxes[
+                    DateString[
+                    TimeZoneConvert[
+                    DateObject[
+                    3.8705451655658633`17.340347128784092*^9, TimeZone -> 
+                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
+                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
+                    StandardForm], SingleEvaluation -> True, Evaluator -> 
+                   "System"], FontSlant -> Italic, FontColor -> 
+                  GrayLevel[0.5], FontSize -> 0.9 Inherited, StripOnInput -> 
+                  False], "\"   \"", 
+                 TagBox[
+                  GridBox[{{
+                    DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "FormNotebookStrings", "QACloudResponseSucceed"], 
+                    StandardForm]], "\"\""}}, AutoDelete -> False, 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                   GridBoxSpacings -> {"Columns" -> {{0.25}}}], "Grid"], 
+                 "\"\"", "\"\"", 
+                 TagBox[
+                  ButtonBox[
+                   TagBox[
+                    PaneSelectorBox[{False -> GraphicsBox[{
+                    GrayLevel[
+                    NCache[
+                    Rational[64, 85], 0.7529411764705882]], 
+                    
+                    PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
+                    0.42426406871192845`}, {0.42426406871192845`, 
+                    0.282842712474619}}], 
+                    
+                    PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
+                    0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
+                    0.42426406871192845`}}]}, ImageSize -> 18, 
+                    PlotRangePadding -> 0, PlotRange -> 0.7, Background -> 
+                    None], True -> GraphicsBox[{
+                    GrayLevel[
+                    NCache[
+                    Rational[128, 255], 0.5019607843137255]], 
+                    
+                    PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
+                    0.42426406871192845`}, {0.42426406871192845`, 
+                    0.282842712474619}}], 
+                    
+                    PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
+                    0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
+                    0.42426406871192845`}}]}, ImageSize -> 18, 
+                    PlotRangePadding -> 0, PlotRange -> 0.7, Background -> 
+                    None]}, 
+                    Dynamic[
+                    CurrentValue["MouseOver"]], ImageSize -> Automatic, 
+                    FrameMargins -> 0], 
+                    MouseAppearanceTag["LinkHand"]], ButtonFunction :> 
+                   With[{DefinitionNotebookClient`Stripes`PackagePrivate`nbo$ = 
+                    EvaluationNotebook[]}, 
+                    CurrentValue[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
+                    DockedCells] = If[
+                    TrueQ[
+                    MemberQ[
+                    CurrentValue["ModifierKeys"], "Control"]], 
+                    DeleteCases[
+                    Flatten[{
+                    CurrentValue[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
+                    DockedCells]}], 
+                    Cell[
+                    Blank[], "StripeCell", 
+                    BlankNullSequence[]]], 
+                    DeleteCases[
+                    Flatten[{
+                    CurrentValue[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
+                    DockedCells]}], 
+                    Condition[
+                    Pattern[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
+                    Blank[Cell]], 
+                    Not[
+                    FreeQ[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
+                    "3dbfa49d-4e98-4918-ba74-71a1bb89d1b9"]]]]]], Appearance -> 
+                   None, BoxID -> "3dbfa49d-4e98-4918-ba74-71a1bb89d1b9", 
+                   Evaluator -> Automatic, Method -> "Preemptive"], 
+                  MouseAppearanceTag["LinkHand"]]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {Left, Left, Left, Right, Right, Right}, 
+                 "Rows" -> {{Baseline}}}, AutoDelete -> False, 
+               GridBoxItemSize -> {
+                "Columns" -> {
+                  Automatic, Automatic, Automatic, Fit, 8, Automatic}, 
+                 "Rows" -> {{Automatic}}}], "Grid"]}}, 
+           GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> False, 
+           GridBoxBackground -> {"Columns" -> {{Automatic}}}, 
+           GridBoxItemSize -> {
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+           GridBoxSpacings -> {"Columns" -> {{0.2}}, "Rows" -> {{0.5}}}, 
+           BaselinePosition -> {1, 1}], True -> GridBox[{{
+             OpenerBox[
+              Dynamic[
+               CurrentValue[
+                EvaluationCell[], {TaggingRules, "StripeOpen"}, False]], 
+              Appearance -> Automatic, Enabled -> Automatic, AutoAction -> 
+              False, ContinuousAction -> False], 
+             TagBox[
+              GridBox[{{
+                 StyleBox[
+                  DynamicBox[
+                   ToBoxes[
+                    DateString[
+                    TimeZoneConvert[
+                    DateObject[
+                    3.8705451655658633`17.340347128784092*^9, TimeZone -> 
+                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
+                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
+                    StandardForm], SingleEvaluation -> True, Evaluator -> 
+                   "System"], FontSlant -> Italic, FontColor -> 
+                  GrayLevel[0.5], FontSize -> 0.9 Inherited, StripOnInput -> 
+                  False], "\"   \"", 
+                 TagBox[
+                  GridBox[{{
+                    DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "FormNotebookStrings", "QACloudResponseSucceed"], 
+                    StandardForm]], "\"\""}}, AutoDelete -> False, 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                   GridBoxSpacings -> {"Columns" -> {{0.25}}}], "Grid"], 
+                 "\"\"", "\"\"", 
+                 TagBox[
+                  ButtonBox[
+                   TagBox[
+                    PaneSelectorBox[{False -> GraphicsBox[{
+                    GrayLevel[
+                    NCache[
+                    Rational[64, 85], 0.7529411764705882]], 
+                    
+                    PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
+                    0.42426406871192845`}, {0.42426406871192845`, 
+                    0.282842712474619}}], 
+                    
+                    PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
+                    0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
+                    0.42426406871192845`}}]}, ImageSize -> 18, 
+                    PlotRangePadding -> 0, PlotRange -> 0.7, Background -> 
+                    None], True -> GraphicsBox[{
+                    GrayLevel[
+                    NCache[
+                    Rational[128, 255], 0.5019607843137255]], 
+                    
+                    PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
+                    0.42426406871192845`}, {0.42426406871192845`, 
+                    0.282842712474619}}], 
+                    
+                    PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
+                    0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
+                    0.42426406871192845`}}]}, ImageSize -> 18, 
+                    PlotRangePadding -> 0, PlotRange -> 0.7, Background -> 
+                    None]}, 
+                    Dynamic[
+                    CurrentValue["MouseOver"]], ImageSize -> Automatic, 
+                    FrameMargins -> 0], 
+                    MouseAppearanceTag["LinkHand"]], ButtonFunction :> 
+                   With[{DefinitionNotebookClient`Stripes`PackagePrivate`nbo$ = 
+                    EvaluationNotebook[]}, 
+                    CurrentValue[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
+                    DockedCells] = If[
+                    TrueQ[
+                    MemberQ[
+                    CurrentValue["ModifierKeys"], "Control"]], 
+                    DeleteCases[
+                    Flatten[{
+                    CurrentValue[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
+                    DockedCells]}], 
+                    Cell[
+                    Blank[], "StripeCell", 
+                    BlankNullSequence[]]], 
+                    DeleteCases[
+                    Flatten[{
+                    CurrentValue[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
+                    DockedCells]}], 
+                    Condition[
+                    Pattern[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
+                    Blank[Cell]], 
+                    Not[
+                    FreeQ[
+                    DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
+                    "3dbfa49d-4e98-4918-ba74-71a1bb89d1b9"]]]]]], Appearance -> 
+                   None, BoxID -> "3dbfa49d-4e98-4918-ba74-71a1bb89d1b9", 
+                   Evaluator -> Automatic, Method -> "Preemptive"], 
+                  MouseAppearanceTag["LinkHand"]]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {Left, Left, Left, Right, Right, Right}, 
+                 "Rows" -> {{Baseline}}}, AutoDelete -> False, 
+               GridBoxItemSize -> {
+                "Columns" -> {
+                  Automatic, Automatic, Automatic, Fit, 8, Automatic}, 
+                 "Rows" -> {{Automatic}}}], "Grid"]}, {"", 
+             PaneBox[
+              TagBox[
+               GridBox[{{"\"\"", 
+                  StyleBox[
+                   TagBox[
+                    GridBox[{{"\"\[FilledVerySmallSquare]\"", 
+                    DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "FormNotebookStrings", "QADeployLocationStr"], 
+                    StandardForm]], 
+                    TemplateBox[{
+                    RowBox[{"CloudObject", "[", 
+                    
+                    TemplateBox[{
+                    "\"https://\[Ellipsis]/burbery1/Quizzes/MyQuiz/quiz\"", 
+                    "https://www.wolframcloud.com/obj/burbery1/Quizzes/MyQuiz/\
+quiz"}, "HyperlinkURL"], "]"}]}, "ClickToCopy"]}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {Automatic, Automatic, Fit}, 
+                    "Rows" -> {{Automatic}}}], "Grid"], FontColor -> 
+                   GrayLevel[0.5], FontSize -> 12, StripOnInput -> False]}}, 
+                GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> 
+                False, GridBoxDividers -> {
+                 "Columns" -> {{None}}, "RowsIndexed" -> {-1 -> GrayLevel[
+                    Rational[239, 255]]}}, 
+                GridBoxItemSize -> {
+                 "Columns" -> {Automatic, Fit}, "Rows" -> {{Automatic}}}, 
+                GridBoxSpacings -> {
+                 "Columns" -> {1, {}, 1}, "Rows" -> {1, {}, 2}}], "Grid"], 
+              ImageMargins -> 0]}}, 
+           GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> False, 
+           GridBoxBackground -> {"Columns" -> {{Automatic}}}, 
+           GridBoxItemSize -> {
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+           GridBoxSpacings -> {"Columns" -> {{0.2}}, "Rows" -> {{0.5}}}, 
+           BaselinePosition -> {1, 1}]}, 
+        Dynamic[
+         CurrentValue[
+          EvaluationCell[], {TaggingRules, "StripeOpen"}, False]], Alignment -> 
+        Automatic, ImageSize -> Automatic, ImageMargins -> 0, BaseStyle -> {},
+         DefaultBaseStyle -> "OpenerView", BaselinePosition -> Baseline], 
+       Deployed -> False, StripOnInput -> False], 
+      OpenerView[{
+        Grid[{{
+           Style[
+            Dynamic[
+             DateString[
+              TimeZoneConvert[
+               DateObject[
+               3.8705451655658633`17.340347128784092*^9, TimeZone -> 0]], {
+              "MonthName", " ", "DayShort", ", ", "Year", " ", "Hour12Short", 
+               ":", "Minute", " ", "AMPMLowerCase"}], SingleEvaluation -> 
+             True, Evaluator -> "System"], FontSlant -> Italic, FontColor -> 
+            GrayLevel[0.5], FontSize -> 0.9 Inherited], "   ", 
+           Grid[{{
+              Dynamic[
+               FEPrivate`FrontEndResource[
+               "FormNotebookStrings", "QACloudResponseSucceed"]], ""}}, 
+            Spacings -> 0.25], "", "", 
+           MouseAppearance[
+            Button[
+             MouseAppearance[
+              Mouseover[
+               Graphics[{
+                 GrayLevel[
+                  Rational[64, 85]], 
+                 
+                 Polygon[{{-0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
+                  0.42426406871192845`}, {0.42426406871192845`, 
+                  0.282842712474619}}], 
+                 
+                 Polygon[{{0.42426406871192845`, -0.282842712474619}, {
+                  0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
+                  0.42426406871192845`}}]}, ImageSize -> 18, PlotRangePadding -> 
+                0, PlotRange -> 0.7, Background -> None], 
+               Graphics[{
+                 GrayLevel[
+                  Rational[128, 255]], 
+                 
+                 Polygon[{{-0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
+                  0.42426406871192845`}, {0.42426406871192845`, 
+                  0.282842712474619}}], 
+                 
+                 Polygon[{{0.42426406871192845`, -0.282842712474619}, {
+                  0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
+                  0.42426406871192845`}}]}, ImageSize -> 18, PlotRangePadding -> 
+                0, PlotRange -> 0.7, Background -> None]], "LinkHand"], 
+             
+             With[{DefinitionNotebookClient`Stripes`PackagePrivate`nbo$ = 
                EvaluationNotebook[]}, 
               CurrentValue[
                DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
@@ -1879,17 +1754,36 @@ quiz"}, "HyperlinkURL"], "]"}]]]}}, Alignment -> Left,
                   Not[
                    FreeQ[
                    DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
-                    "9ad4f414-00a1-452b-ab0b-4484a7b4e704"]]]]]], Appearance -> 
-            None, BoxID -> "9ad4f414-00a1-452b-ab0b-4484a7b4e704", Evaluator -> 
-            Automatic, Method -> "Preemptive"], 
-           MouseAppearanceTag["LinkHand"]], ItemSize -> All, StripOnInput -> 
-          False]}}, 
-       GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}, 
-       AutoDelete -> False, 
-       GridBoxItemSize -> {
-        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Grid"], 
-     "Text", FontSize -> 12, FontColor -> GrayLevel[0.25], StripOnInput -> 
-     False]], "StripeCell", CellFrameMargins -> {{20, 5}, {2, 2}}, 
+                    "3dbfa49d-4e98-4918-ba74-71a1bb89d1b9"]]]]]], Appearance -> 
+             None, BoxID -> "3dbfa49d-4e98-4918-ba74-71a1bb89d1b9"], 
+            "LinkHand"]}}, 
+         ItemSize -> {{Automatic, Automatic, Automatic, Fit, 8, Automatic}, 
+           Automatic}, 
+         Alignment -> {{Left, Left, Left, Right, Right, Right}, Baseline}], 
+        Grid[{{"", 
+           Style[
+            Grid[{{"\[FilledVerySmallSquare]", 
+               Dynamic[
+                FEPrivate`FrontEndResource[
+                "FormNotebookStrings", "QADeployLocationStr"]], 
+               ClickToCopy[
+                RawBoxes[
+                 RowBox[{"CloudObject", "[", 
+                   
+                   TemplateBox[{
+                    "\"https://\[Ellipsis]/burbery1/Quizzes/MyQuiz/quiz\"", 
+                    "https://www.wolframcloud.com/obj/burbery1/Quizzes/MyQuiz/\
+quiz"}, "HyperlinkURL"], "]"}]]]}}, Alignment -> Left, 
+             ItemSize -> {{Automatic, Automatic, Fit}, Automatic}], FontColor -> 
+            GrayLevel[0.5], FontSize -> 12]}}, 
+         ItemSize -> {{Automatic, Fit}, Automatic}, Alignment -> Left, 
+         Dividers -> {None, {-1 -> GrayLevel[
+              Rational[239, 255]]}}, Spacings -> {{1, {}, 1}, {1, {}, 2}}]}, 
+       Dynamic[
+        CurrentValue[
+         EvaluationCell[], {TaggingRules, "StripeOpen"}, False]]]], "Text", 
+     FontSize -> 12, FontColor -> GrayLevel[0.25], StripOnInput -> False]], 
+   "StripeCell", CellFrameMargins -> {{20, 5}, {2, 2}}, 
    CellFrame -> {{0, 0}, {1, 0}}, CellFrameColor -> GrayLevel[0.75]]},
 TaggingRules->{
  "FormNotebook" -> {
@@ -1914,7 +1808,7 @@ TaggingRules->{
                  RowBox[{"\"Y\"", "\[Rule]", "True"}], ",", 
                  RowBox[{"\"Z\"", "\[Rule]", "False"}]}], "}"}], "]"}]}], 
          "]"}]|>, "PreventSettingsDialog" -> False, "InputAssoc" -> <||>}, 
-  "StatusMessage" -> ProgressIndicator[Appearance -> "Necklace"]},
+  "StatusMessage" -> ""},
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
 StyleDefinitions->"Wolfram/QAFormNotebook.nb",
 ExpressionUUID->"45ee1e34-d2c0-4a36-a8b9-2792fd473377"
@@ -1931,17 +1825,19 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 6338, 128, 125, InheritFromParent,ExpressionUUID->"7666c22d-b7b2-46ea-89df-0351265fd7eb"],
-Cell[6899, 150, 5573, 113, 138, InheritFromParent,ExpressionUUID->"fc9acb47-a84a-427a-8d99-2ecba33de690"],
-Cell[12475, 265, 5322, 106, 111, InheritFromParent,ExpressionUUID->"7a691408-e35c-4ce9-8097-aa1ac1f97f21"],
-Cell[17800, 373, 5165, 104, 111, InheritFromParent,ExpressionUUID->"80a940ca-4031-446c-abc4-f9ee60e8d449"],
-Cell[22968, 479, 5877, 115, 138, InheritFromParent,ExpressionUUID->"d80b30c9-ea79-41d7-a79f-287fc3f69ed4"],
-Cell[28848, 596, 5984, 121, 138, InheritFromParent,ExpressionUUID->"4d3894a7-985f-45d4-b54f-7c7fe0899524"],
-Cell[34835, 719, 5879, 114, 138, InheritFromParent,ExpressionUUID->"59bfd2c9-9b17-4ea6-930f-a111c8739477"],
-Cell[40717, 835, 5936, 121, 138, InheritFromParent,ExpressionUUID->"77231e7d-f2d9-4404-9035-20e746c6e74b"],
-Cell[46656, 958, 446, 10, 28, "Message",ExpressionUUID->"20fea4d8-0862-4563-9a6a-afbb3dbb79cb"],
-Cell[47105, 970, 446, 10, 28, "Message",ExpressionUUID->"9d755eac-2efe-4f77-aa6a-d76ce2db1e26"],
-Cell[47554, 982, 446, 10, 28, "Message",ExpressionUUID->"f79a5b85-3b18-4f92-b56a-8d75bd32555f"],
-Cell[48003, 994, 483, 11, 28, "Message",ExpressionUUID->"65084a92-617a-4e48-b792-34e486a39ac4"]
+Cell[6899, 150, 473, 13, 95, "FormElementCode",ExpressionUUID->"6fe402ba-51ec-4cb8-a029-0e6650ab773e"],
+Cell[7375, 165, 473, 13, 95, "FormElementCode",ExpressionUUID->"83c7ab3e-e9d9-42db-821f-72156ae8874d"],
+Cell[CellGroupData[{
+Cell[7873, 182, 473, 13, 95, InheritFromParent,ExpressionUUID->"4f86a274-342b-433d-8c47-9f5d231a308e"],
+Cell[8349, 197, 5877, 115, 138, InheritFromParent,ExpressionUUID->"d80b30c9-ea79-41d7-a79f-287fc3f69ed4"],
+Cell[14229, 314, 5984, 121, 138, InheritFromParent,ExpressionUUID->"4d3894a7-985f-45d4-b54f-7c7fe0899524"],
+Cell[20216, 437, 5879, 114, 138, InheritFromParent,ExpressionUUID->"59bfd2c9-9b17-4ea6-930f-a111c8739477"],
+Cell[26098, 553, 5936, 121, 138, InheritFromParent,ExpressionUUID->"77231e7d-f2d9-4404-9035-20e746c6e74b"],
+Cell[32037, 676, 446, 10, 28, "Message",ExpressionUUID->"20fea4d8-0862-4563-9a6a-afbb3dbb79cb"],
+Cell[32486, 688, 446, 10, 28, "Message",ExpressionUUID->"9d755eac-2efe-4f77-aa6a-d76ce2db1e26"],
+Cell[32935, 700, 446, 10, 28, "Message",ExpressionUUID->"f79a5b85-3b18-4f92-b56a-8d75bd32555f"],
+Cell[33384, 712, 483, 11, 28, "Message",ExpressionUUID->"65084a92-617a-4e48-b792-34e486a39ac4"]
+}, Open  ]]
 }
 ]
 *)
